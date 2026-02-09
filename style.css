@@ -1,0 +1,33 @@
+body {
+  background: linear-gradient(120deg, #1a1a1a, #3a0f2e);
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: rgba(0,0,0,0.6);
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 90%;
+}
+
+#contador {
+  font-size: 22px;
+  margin: 15px 0;
+}
+
+audio {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.frase {
+  margin-top: 15px;
+  font-style: italic;
+}
