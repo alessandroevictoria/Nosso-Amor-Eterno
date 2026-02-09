@@ -75,3 +75,15 @@ button:hover {
     transform: translateY(0);
   }
 }
+
+.fade-delay-1 {
+  animation-delay: 0.3s;
+}
+
+.fade-delay-2 {
+  animation-delay: 0.8s;
+}
+
+.fade-delay-3 {
+  animation-delay: 1.3s;
+}
