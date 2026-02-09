@@ -31,3 +31,12 @@ audio {
   margin-top: 15px;
   font-style: italic;
 }
+
+#foto {
+  width: 280px;
+  max-width: 90%;
+  border-radius: 20px;
+  margin-top: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  transition: opacity 1s ease-in-out;
+}
