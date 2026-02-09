@@ -3,18 +3,27 @@ const contador = document.getElementById("contador");
 
 function atualizar() {
   const agora = new Date();
-  const diff = agora - dataInicio;
+  let diff = agora - dataInicio;
 
-  const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
-  const horas = Math.floor((diff / (1000 * 60 * 60)) % 24);
-  const minutos = Math.floor((diff / (1000 * 60)) % 60);
-  const segundos = Math.floor((diff / 1000) % 60);
+  if (diff < 0) return;
+
+  const segundosTotais = Math.floor(diff / 1000);
+  const minutosTotais = Math.floor(segundosTotais / 60);
+  const horasTotais = Math.floor(minutosTotais / 60);
+  const diasTotais = Math.floor(horasTotais / 24);
+
+  const anos = Math.floor(diasTotais / 365);
+  const meses = Math.floor((diasTotais % 365) / 30);
+  const dias = (diasTotais % 365) % 30;
+
+  const horas = horasTotais % 24;
+  const minutos = minutosTotais % 60;
+  const segundos = segundosTotais % 60;
 
   contador.innerHTML = `
-    ${dias} dias,
-    ${horas} horas,
-    ${minutos} minutos e
-    ${segundos} segundos 💕
+    <strong>Estamos juntos há:</strong><br>
+    ${anos} anos, ${meses} meses e ${dias} dias<br>
+    ${horas}h ${minutos}m ${segundos}s 💕
   `;
 }
 
