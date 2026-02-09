@@ -20,3 +20,14 @@ function atualizar() {
 
 setInterval(atualizar, 1000);
 atualizar();
+
+// Slideshow de fotos
+const fotos = ["Foto1.jpg", "Foto2.jpg", "Foto3.jpg"];
+let indice = 0;
+
+const img = document.getElementById("foto");
+
+setInterval(() => {
+  indice = (indice + 1) % fotos.length;
+  img.src = fotos[indice];
+}, 3000);
