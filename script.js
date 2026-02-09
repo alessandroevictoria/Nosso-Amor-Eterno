@@ -31,3 +31,8 @@ setInterval(() => {
   indice = (indice + 1) % fotos.length;
   img.src = fotos[indice];
 }, 3000);
+
+function tocarMusica() {
+  const musica = document.getElementById("player");
+  musica.play();
+}
