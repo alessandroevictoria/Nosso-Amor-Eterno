@@ -40,3 +40,18 @@ audio {
   box-shadow: 0 10px 25px rgba(0,0,0,0.3);
   transition: opacity 1s ease-in-out;
 }
+
+button {
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #ff1e4d;
+}
